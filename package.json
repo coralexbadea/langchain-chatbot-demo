@@ -10,16 +10,18 @@
   },
   "dependencies": {
     "@chatscope/chat-ui-kit-react": "^1.10.1",
+    "@huggingface/inference": "^1.8.0",
     "@next/font": "13.1.6",
     "@supabase/auth-helpers-nextjs": "^0.7.2",
     "@supabase/auth-ui-react": "^0.4.2",
     "@supabase/auth-ui-shared": "^0.1.6",
     "@supabase/supabase-js": "^2.24.0",
+    "@xenova/transformers": "^2.5.4",
     "bottleneck": "^2.19.5",
     "cheerio": "^1.0.0-rc.12",
-    "langchain": "^0.0.96",
+    "langchain": "^0.0.142",
     "next": "13.1.6",
-    "node-spider": "^1.4.1",
+    "node-spider": "^0.8.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-markdown": "^8.0.5",
@@ -38,6 +40,7 @@
     "@types/url-parse": "^1.4.8",
     "eslint": "8.34.0",
     "eslint-config-next": "13.1.6",
+    "supabase": "^1.93.0",
     "typescript": "4.9.5"
   }
 }

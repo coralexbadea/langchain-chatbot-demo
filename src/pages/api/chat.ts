@@ -4,7 +4,7 @@ import { ChatOpenAI } from "langchain/chat_models/openai";
 import { OpenAI } from "langchain/llms/openai";
 import { PromptTemplate } from "langchain/prompts";
 import type { NextApiRequest, NextApiResponse } from "next";
-import { summarizeLongDocument } from "./summarizer";
+// import { summarizeLongDocument } from "./summarizer";
 import {
   createPagesServerClient,
   SupabaseClient,
@@ -165,7 +165,8 @@ const handleRequest = async ({
 
         const summary =
           allDocs.length > 4000
-            ? await summarizeLongDocument({ document: allDocs, inquiry })
+            // ? await summarizeLongDocument({ document: allDocs, inquiry })
+            ? allDocs.slice(0,3999)
             : allDocs;
 
         await chain.call({
